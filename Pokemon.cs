@@ -15,9 +15,9 @@ namespace PokemonBattle
         public int Attack { get; set; }
         public int Defense { get; set; }
         public int Speed { get; set; }
-        public Ability Ability1 { get; set; }
-        public Ability Ability2 { get; set; }
-        public Ability Ability3 { get; set; }
+        public List<Ability> Abilities { get; set; }
+
+
 
         public Pokemon(string Name, int Id, string Type, string Species, int HP, int Attack, int Defense, int Speed, Ability Ability1, Ability Ability2, Ability Ability3)
         {
@@ -30,9 +30,10 @@ namespace PokemonBattle
             this.Attack = Attack;
             this.Defense = Defense;
             this.Speed = Speed;
-            this.Ability1 = Ability1;
-            this.Ability2 = Ability2;
-            this.Ability3 = Ability3;
+            this.Abilities = new List<Ability>();
+            this.Abilities.Add(Ability1);
+            this.Abilities.Add(Ability2);
+            this.Abilities.Add(Ability3);
         }
 
         public void DisplayPokemon()
@@ -46,7 +47,7 @@ namespace PokemonBattle
             Console.WriteLine($"   Attack | {this.Attack}");
             Console.WriteLine($"  Defense | {this.Defense}");
             Console.WriteLine($"    Speed | {this.Speed}");
-            Console.WriteLine($"Abilities | {this.Ability1.Name}, {this.Ability2.Name}, and {this.Ability3.Name}");
+            Console.WriteLine($"Abilities | {this.Abilities[0].Name}, {this.Abilities[1].Name}, and {this.Abilities[2].Name}");
             Console.WriteLine("******************************************************************************");
 
 
@@ -56,10 +57,10 @@ namespace PokemonBattle
 
     public class Ability
     {
-        public string Name;
-        public int Power;
-        public decimal Accuracy;
-        public string Description;
+        public string Name { get; set; }
+        public int Power { get; set; }
+        public decimal Accuracy { get; set; }
+        public string Description { get; set; }
 
         public Ability(string Name, int Power, decimal Accuracy, string Description)
         {
@@ -68,8 +69,5 @@ namespace PokemonBattle
             this.Accuracy = Accuracy;
             this.Description = Description;
         }
-    }
-
-
-
+    }    
 }

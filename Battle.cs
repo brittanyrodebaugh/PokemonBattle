@@ -28,9 +28,9 @@ namespace PokemonBattle
                 if (isPlayerTurn)
                 {
                     Console.WriteLine($"Choose Your Attack!");
-                    Console.WriteLine($"1) {playerPokemon.Ability1.Name}");
-                    Console.WriteLine($"2) {playerPokemon.Ability2.Name}");
-                    Console.WriteLine($"3) {playerPokemon.Ability3.Name}");
+                    Console.WriteLine($"1) {playerPokemon.Abilities[0].Name}");
+                    Console.WriteLine($"2) {playerPokemon.Abilities[1].Name}");
+                    Console.WriteLine($"3) {playerPokemon.Abilities[2].Name}");
                     int playerAttack = int.Parse(Console.ReadLine());
                     bool playerHit = random.Next(0, 2) == 1;
 
