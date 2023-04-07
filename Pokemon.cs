@@ -40,14 +40,14 @@ namespace PokemonBattle
         {
 
             Console.WriteLine("******************************************************************************");
-            Console.WriteLine($"You have chosen {this.Name}!");
-            Console.WriteLine($"{this.Type} Type Pokemon.");
-            Console.WriteLine($"{this.Name} is a {this.Species}.");
-            Console.WriteLine($"Your Pokemon's Health is {this.HP}.");
-            Console.WriteLine($"   Attack | {this.Attack}");
-            Console.WriteLine($"  Defense | {this.Defense}");
-            Console.WriteLine($"    Speed | {this.Speed}");
-            Console.WriteLine($"Abilities | {this.Abilities[0].Name}, {this.Abilities[1].Name}, and {this.Abilities[2].Name}");
+            Console.WriteLine($"                    You have chosen {this.Name}!");
+            Console.WriteLine($"                    {this.Type} Type Pokemon.");
+            Console.WriteLine($"                    {this.Name} is a {this.Species}.");
+            Console.WriteLine($"                    Your Pokemon's Health is {this.HP}.");
+            Console.WriteLine($"                       Attack | {this.Attack}");
+            Console.WriteLine($"                      Defense | {this.Defense}");
+            Console.WriteLine($"                        Speed | {this.Speed}");
+            Console.WriteLine($"                    Abilities | {this.Abilities[0].Name}, {this.Abilities[1].Name}, and {this.Abilities[2].Name}");
             Console.WriteLine("******************************************************************************");
 
 

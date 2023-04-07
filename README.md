@@ -16,3 +16,5 @@ Program is ran on NET 7.0.
 1.) Clone project
 2.) Build project in Visual Studio Code. 
 3.) Use numbers and enter keys to navigate.
+
+Hope you enjoy the game and become the greatest Pokemon Master to ever be known! 
